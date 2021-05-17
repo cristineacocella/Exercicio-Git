@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FALE CONOSCO</title>
+        <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <a href="index.html"><div class="banner"></div></a>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="sobrenos.html">Sobre Nós</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><button class="cadastro" input type="submit" name="Cadastre-se">Cadastre-se</button></li>
+                        <li><button class="login" input type="submit"></button></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="content-faleconosco">
+                <div class="content-faleconosco-text">
+                    <p class="content-faleconosco-text-contato">
+                        contato@iasolution.com.br
+                    </p>
+                    <p>
+                        +55 (DDD) xxxx-xxxx
+                    </p>
+                </div>
+                <div class="content-faleconosco-form">
+                    <form action="faleconosco.html" method="GET">
+                        <div>
+                            <label for="idTxtNm">Nome</label>
+                        </div>
+                        <div>
+                            <input type="text" name="txtNm" id="idTxtNm" placeholder="Nome" required oninvalid="setCustomValidity('Esse campo deve ser preenchido!')"
+                            pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
+                        </div>
+                        <div>
+                            <label for="idTxtEmail">E-mail</label>
+                        </div>
+                        <div>
+                            <input type="email" name="txtEmail" id="idTxtEmail" placeholder="E-mail" required oninvalid="setCustomValidity('Esse campo deve ser preenchido!')">
+                        </div>
+                        <div>
+                            <label for="idTxtMsg">Mensagem</label>
+                        </div>
+                        <div>
+                            <input type="text" name="txtMsg" id="idTxtMsg" placeholder="Digite sua mensagem" required oninvalid="setCustomValidity('Esse campo deve ser preenchido!')">
+                        </div>
+                        <div class="content-faleconosco-form-enviar">
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer class="rodape">
+                <button class="bot" input type="submit"><i class="fas fa-robot"></i></button>
+            </footer>
+        </div>
+    </body>
+
+</html>
